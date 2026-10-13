@@ -8,9 +8,9 @@ import re
 from pathlib import Path
 from typing import TYPE_CHECKING
 
-from mistralai import Mistral
+from mistralai.client import Mistral
+from mistralai.client.models import File
 from mistralai.extra import response_format_from_pydantic_model
-from mistralai.models.file import File
 
 from mistral_ocr.models import DocumentAnnotation, ImageAnnotation
 
